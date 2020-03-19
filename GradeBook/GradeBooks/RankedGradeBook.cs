@@ -16,22 +16,23 @@ namespace GradeBook.GradeBooks
             {
                 throw new InvalidOperationException("Ranked-grading requires a minimum of 5 students to work");
             }
-            switch(averageGrade)
+            /*return 'F';*/
+            switch (averageGrade)
             {
                 case var gradeLetter when gradeLetter >= 0.2:
-                return 'A';
+                    return 'A';
 
-                case var gradeLetter when gradeLetter <= 0.4 || gradeLetter >0.2:
-                return 'B';
+                /*case var gradeLetter when gradeLetter <= 0.4 || gradeLetter > 0.2:
+                    return 'B';
 
-                case var gradeLetter when gradeLetter <= 0.6 || gradeLetter >0.4:
-                return 'C';
+                case var gradeLetter when gradeLetter <= 0.6 || gradeLetter > 0.4:
+                    return 'C';
 
-                case var gradeLetter when gradeLetter <= 0.8 || gradeLetter >0.6:
-                return 'D';
+                case var gradeLetter when gradeLetter <= 0.8 || gradeLetter > 0.6:
+                    return 'D';*/
 
                 default:
-                return 'F';
+                    return 'F';
             }
         }
     }
