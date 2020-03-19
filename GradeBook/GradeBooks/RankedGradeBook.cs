@@ -18,16 +18,16 @@ namespace GradeBook.GradeBooks
             }
             switch(averageGrade)
             {
-                case var gradeLetter when gradeLetter <= 0.2:
+                case var gradeLetter when gradeLetter >= 0.2:
                 return 'A';
 
-                case var gradeLetter when gradeLetter <= 0.4:
+                case var gradeLetter when gradeLetter <= 0.4 || gradeLetter >0.2:
                 return 'B';
 
-                case var gradeLetter when gradeLetter <= 0.6:
+                case var gradeLetter when gradeLetter <= 0.6 || gradeLetter >0.4:
                 return 'C';
 
-                case var gradeLetter when gradeLetter <= 0.8:
+                case var gradeLetter when gradeLetter <= 0.8 || gradeLetter >0.6:
                 return 'D';
 
                 default:
