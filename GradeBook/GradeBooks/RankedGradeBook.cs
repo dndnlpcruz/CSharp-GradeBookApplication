@@ -22,13 +22,13 @@ namespace GradeBook.GradeBooks
                 case var gradeLetter when gradeLetter >= 0.2:
                     return 'A';
 
-                case var gradeLetter when gradeLetter >= 0.4:
+                case var gradeLetter when gradeLetter <= 0.4:
                    return 'B';
 
-                //case var gradeLetter when gradeLetter <= 0.6 || gradeLetter > 0.4:
+                //case var gradeLetter when gradeLetter <= 0.6:
                 //    return 'C';
 
-                //case var gradeLetter when gradeLetter <= 0.8 || gradeLetter > 0.6:
+                //case var gradeLetter when gradeLetter <= 0.8:
                  //   return 'D';
 
                 default:
